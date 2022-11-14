@@ -470,6 +470,8 @@
 				</form>
 			</div>
 		</footer>
+
+		<!-- Modal block -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="btn-modal-close" data-modal-close>
@@ -477,6 +479,80 @@
 						<use href="./images/symbol-defs.svg#icon-modal-close"></use>
 					</svg>
 				</button>
+
+				<!-- Request form -->
+				<strong class="contacts-title">Залиште свої дані, ми вам передзвонимо</strong class="contacts-title">
+				<form name="contacts-form">
+					<label class="contacts-label" for="name">Ім'я</label>
+					<div class="contacts-field">
+						<input
+							class="contacts-input"
+							type="text"
+							name="name"
+							id="name"
+							required
+							minlength="3"
+							maxlength="20"
+							autofocus />
+						<svg class="contacts-icon" widt="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-person-black"></use>
+						</svg>
+					</div>
+					<label class="contacts-label" for="phone">Телефон</label>
+					<div class="contacts-field">
+						<input
+							class="contacts-input"
+							type="tel"
+							name="phone"
+							id="phone"
+							placeholder="+38 050 000 00 00"
+							required
+							minlength="6"
+							maxlength="13" />
+						<svg class="contacts-icon" widt="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-phone-black"></use>
+						</svg>
+					</div>
+					<label class="contacts-label" for="email">Пошта</label>
+					<div class="contacts-field">
+						<input
+							class="contacts-input"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="sample@mail.com"
+							required
+							minlength="10"
+							maxlength="25" />
+						<svg class="contacts-icon" widt="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-email-black"></use>
+						</svg>
+					</div>
+					<label class="contacts-label" for="users-comments">Коментар</label>
+					<textarea
+						class="contacts-comments"
+						name="users-comments"
+						id="users-comments"
+						placeholder="Введіть текст" 
+						required>
+					</textarea>
+
+					<label class="checkbox" for="checkbox">
+						<input
+							class="checkbox-input visually-hidden"
+							type="checkbox"
+							id="checkbox"
+							checked
+							required />
+						<svg class="checkbox-icon">
+							<use class="icon-not-accept" href="./images/symbol-defs.svg#icon-Vector-checkbox1"></use>
+							<use class="icon-accept" href="./images/symbol-defs.svg#icon-Vector-checkbox2"></use>
+						</svg>
+						Погоджуюся з розсилкою та приймаю
+						<a href="#">Умови договору</a>
+					</label>
+					<button class="contacts-button" type="submit">Відправити</button>
+				</form>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
