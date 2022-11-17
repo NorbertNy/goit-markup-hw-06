@@ -449,16 +449,15 @@
 					class="subscription"
 					name="subscription-form"
 					autocomplete="off"
-					novalidate
-					action="">
-					<p class="subscription-title">Підпишіться на розсилку</p>
-					<label class="subscription-label" for="email">
+					novalidate>
+					<strong class="subscription-title">Підпишіться на розсилку</strong>
+					<label class="subscription-label" for="subscription-email">
 						<span class="visually-hidden">Email</span>
 					</label>
 					<div class="subscription-group">
 						<input
 							class="subscription-input"
-							id="email"
+							id="subscription-email"
 							type="email"
 							name="email"
 							placeholder="E-mail"
@@ -481,7 +480,9 @@
 				</button>
 
 				<!-- Request form -->
-				<strong class="contacts-title">Залиште свої дані, ми вам передзвонимо</strong class="contacts-title">
+				<strong class="contacts-title"
+					>Залиште свої дані, ми вам передзвонимо</strong
+				>
 				<form name="contacts-form">
 					<label class="contacts-label" for="name">Ім'я</label>
 					<div class="contacts-field">
@@ -492,9 +493,8 @@
 							id="name"
 							required
 							minlength="3"
-							maxlength="20"
-							autofocus />
-						<svg class="contacts-icon" widt="18" height="18">
+							maxlength="20" />
+						<svg class="contacts-icon" width="18" height="18">
 							<use href="./images/symbol-defs.svg#icon-person-black"></use>
 						</svg>
 					</div>
@@ -509,7 +509,7 @@
 							required
 							minlength="6"
 							maxlength="13" />
-						<svg class="contacts-icon" widt="18" height="18">
+						<svg class="contacts-icon" width="18" height="18">
 							<use href="./images/symbol-defs.svg#icon-phone-black"></use>
 						</svg>
 					</div>
@@ -524,7 +524,7 @@
 							required
 							minlength="10"
 							maxlength="25" />
-						<svg class="contacts-icon" widt="18" height="18">
+						<svg class="contacts-icon" width="18" height="18">
 							<use href="./images/symbol-defs.svg#icon-email-black"></use>
 						</svg>
 					</div>
@@ -533,7 +533,7 @@
 						class="contacts-comments"
 						name="users-comments"
 						id="users-comments"
-						placeholder="Введіть текст" 
+						placeholder="Введіть текст"
 						required>
 					</textarea>
 
@@ -542,11 +542,14 @@
 							class="checkbox-input visually-hidden"
 							type="checkbox"
 							id="checkbox"
-							checked
 							required />
 						<svg class="checkbox-icon">
-							<use class="icon-not-accept" href="./images/symbol-defs.svg#icon-Vector-checkbox1"></use>
-							<use class="icon-accept" href="./images/symbol-defs.svg#icon-Vector-checkbox2"></use>
+							<use
+								class="icon-not-accept"
+								href="./images/symbol-defs.svg#icon-Vector-checkbox1"></use>
+							<use
+								class="icon-accept"
+								href="./images/symbol-defs.svg#icon-Vector-checkbox2"></use>
 						</svg>
 						Погоджуюся з розсилкою та приймаю
 						<a href="#">Умови договору</a>
