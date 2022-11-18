@@ -1217,7 +1217,8 @@ body {
     padding: 0;
     border: var(--border-modal-close-button);
     border-radius: 50%;
-    border-color: transparent;
+    background-color: unset;
+    /* border-color: transparent; */
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -1325,44 +1326,82 @@ body {
 }
 
 .checkbox {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 7px;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(24/12);
+    line-height: calc(24/14);
     letter-spacing: 0.03em;
-    color: var(--color-text-paragraf)
-    
-    
-    
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-paragraf);
 }
 
-.checkbox-input:checked +.checkbox-icon 
-.icon-accept {
+.checkbox__input:checked +.checkbox__icon 
+.icon__accept {
     opacity: 1;
 }
 
-.checkbox-input:checked +.checkbox-icon 
-.icon-not-accept {
+.checkbox__input:checked +.checkbox__icon
+.icon__not__accept {
     opacity: 0;
 }
 
 
-.checkbox-icon {
+.checkbox__icon {
     width: 16px;
     height: 15px;
 }
 
-.icon-not-accept {
+.icon__not__accept {
     transition: opacity var(--transition-color-function);
-    /* display: none; */
+    
 }
 
-.icon-accept {
+.icon__accept {
     transition: opacity var(--transition-color-function);
     opacity: 0;
 }
 
-.contacts-button {}
+.checkbox__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: var(--primary-blue-color);
+}
+
+.contacts-button {
+    display: block;
+    
+    padding: 10px 52px;
+    min-width: 200px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+}
+
+
 
 
 
